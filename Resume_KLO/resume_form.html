@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="post">          
+          <h1>Contact Me</h1>
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" name="user_first_name" maxlength="30" required>
+        <br/>
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" name="user_last_name" maxlength="30" required>
+        <br/>
+          <label for="phone">Contact Phone Number 123-456-7890:</label>
+            <input type="tel" id="list" name="user_phone_number" maxlength="12" pattern="“[0-9]{3}[0-9]{3}[0-9]{4}“"> <!-- maximum length of a phone number is 16 digits as defined by ITU-->
+        <br/>
+          <label>Phone Type:  </label>  
+          <input type="radio" id="land_line" value="land_line" name="user_phone_type"><label for="land_line">LandLine</label>
+                  <input type="radio" id="mobile" value="mobile" name="user_phone_type"><label for="mobile">Mobile</label>
+        <br/>  
+          <label for="contact_email">Contact Email:</label>
+          <input type="email" id="mail" name="user_email" maxlength="50">
+        <br/><br/>
+          <label for="information_source">How did you hear about me?</label>
+            <select id="source" name="user_info_source">
+                    <option value="search_engine">Search Engine</option>
+                    <option value="social_media">Social Media</option>
+                    <option value="recruiter">Recruiter</option>
+            </select>
+        <br/><br/>      
+          <label>Interest for Contact:</label>
+          <br/> 
+                <input type="checkbox" id="html" value="html_skill" name="user_skills"><label for="html">HTML</label><br/>
+                <input type="checkbox" id="css" value="css_skill" name="user_skills"><label for="css">CSS</label><br/>
+                <input type="checkbox" id="javascript" value="javascript_skill" name="user_skills"><label for="javascript">JavaScript</label><br/>
+                <input type="checkbox" id="c_programming_language" value="c_programming_skill" name="user_skills"><label for="c_programming_language">C</label><br/>
+                <input type="checkbox" id="c++_programming_language" value="c++_programming_skill" name="user_skills"><label for="c++_programming_language">C++</label><br/>
+                <input type="checkbox" id="fortran_programming_language" value="fortran_programming_skill" name="user_skills"><label for="fortran_programming_language">Fortran</label><br/>
+                <br/>
+            <label for="message">Message</label><br/>
+                <textarea id="message" name="user_message" maxlength="250"></textarea><br/>
+                <button type="submit"> Submit </button>
+          </form>  
+    </body>
+</html>
